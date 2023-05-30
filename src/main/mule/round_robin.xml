@@ -126,13 +126,13 @@ vars.error_msg]]></ee:set-payload>
 				</ee:transform>
 			</route>
 		</round-robin>
-<!-- [STUDIO:"Choice"]		<choice doc:name="Choice" doc:id="eb29732a-38cb-4435-b21d-53f41a111cf3" >
+		<choice doc:name="Choice" doc:id="eb29732a-38cb-4435-b21d-53f41a111cf3" >
 			<when expression='#[payload.success == "success"]'>
 				<ee:transform doc:name="Transform Message" doc:id="d3adc29e-5af3-470d-9096-b7bd4b2e6fc6" >
 					<ee:message >
 						<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
-&#45;&#45;-
+---
 "success"]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
@@ -142,11 +142,11 @@ output application/json
 					<ee:message >
 						<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
-&#45;&#45;-
+---
 "error"]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
 			</otherwise>
-		</choice> [STUDIO] -->
+		</choice>
 	</flow>
 </mule>
